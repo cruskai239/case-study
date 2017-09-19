@@ -3,13 +3,3 @@ env: flex
 
 runtime_config:
   document_root: public
-
-# Ensure we skip ".env", which is only for local development
-skip_files:
-  - .env
-
-env_variables:
-  # Put production environment variables here.
-  APP_LOG: errorlog
-  APP_KEY: base64:IxkDTeqmFS/vS0zjJKPVr+lfs5lkzM9O7sL9rSwYc/U=
-  STORAGE_DIR: /tmp
