@@ -13,3 +13,9 @@ env_variables:
   APP_LOG: errorlog
   APP_KEY: base64:IxkDTeqmFS/vS0zjJKPVr+lfs5lkzM9O7sL9rSwYc/U=
   STORAGE_DIR: /tmp
+  DB_CONNECTION: mysql
+  DB_HOST: 35.196.103.227
+  DB_PORT: 3306
+  DB_DATABASE: case_study
+  DB_USERNAME: ruskai
+  DB_PASSWORD: ruskai123$
