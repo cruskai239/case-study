@@ -18,6 +18,15 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::group(['prefix' => 'impressions'], function(){
+    Route::get('do', 'ImpressionController@request_MakeImpression');
+});
+
+Route::group(['prefix' => 'reporting', 'middleware' => 'auth'], function(){
+    Route::post('run', 'ReportController@post_GetReportData');
+});
+
+
 
 
 

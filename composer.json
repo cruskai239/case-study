@@ -8,7 +8,8 @@
         "php": ">=5.5.9",
         "fideloper/proxy": "~3.3",
         "laravel/framework": "5.4.*",
-        "laravel/tinker": "~1.0"
+        "laravel/tinker": "~1.0",
+        "delatbabel/elocryptfive": "~1.0"
     },
     "require-dev": {
         "filp/whoops": "~2.0",
@@ -48,8 +49,8 @@
 
         ],
         "post-deploy-cmd": [
-            "chmod -R 755 bootstrap\/cache"
-
+            "chmod -R 755 bootstrap\/cache",
+            "php artisan cache:clear"
         ]
     },
     "config": {
