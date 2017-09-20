@@ -17,6 +17,12 @@
             src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
+
+    <style>
+       .app{
+            min-height: 350px;
+        }
+    </style>
 </head>
 <body>
 <div id="app">
@@ -39,9 +45,9 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Weather</a></li>
-                    <li><a href="#">Reporting & Charts</a></li>
-                    <li><a href="#">Image Manipulation</a></li> &nbsp;
+                    <li><a target="_blank" href="https://www.linkedin.com/in/chris-ruskai-67807374/">Dashboard</a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/chris-ruskai-67807374/">LinkedIn</a></li>
+                    <li><a target ="_blank" href="https://github.com/cruskai239/case-study">Source Code</a></li>
                 </ul>
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">

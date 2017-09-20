@@ -136,6 +136,8 @@ return [
     |
     */
 
+    'weather_api_key' => '708ebafbe7564aa0114b4454430ae613',
+
     'providers' => [
 
         /*
@@ -167,6 +169,8 @@ return [
         /*
          * Package Service Providers...
          */
+        Maatwebsite\Excel\ExcelServiceProvider::class,
+        Delatbabel\Elocrypt\ElocryptServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -176,7 +180,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        Delatbabel\Elocrypt\ElocryptServiceProvider::class,
+
     ],
 
 
@@ -207,6 +211,7 @@ return [
         'DB' => Illuminate\Support\Facades\DB::class,
         'Eloquent' => Illuminate\Database\Eloquent\Model::class,
         'Event' => Illuminate\Support\Facades\Event::class,
+        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
         'File' => Illuminate\Support\Facades\File::class,
         'Gate' => Illuminate\Support\Facades\Gate::class,
         'Hash' => Illuminate\Support\Facades\Hash::class,

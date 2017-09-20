@@ -23,6 +23,7 @@ Route::group(['prefix' => 'impressions'], function(){
 });
 
 Route::group(['prefix' => 'reporting', 'middleware' => 'auth'], function(){
+    Route::get('export-impressions', 'HomeController@get_ExportRecentActivity');
     Route::post('run', 'ReportController@post_GetReportData');
 });
 
