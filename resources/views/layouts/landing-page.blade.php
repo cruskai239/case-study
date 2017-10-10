@@ -28,7 +28,7 @@
         }
         .headline-button{
             height: 80px;
-            width: 400px;
+            max-width: 400px;
             font-size: 3em;
             box-shadow: 2px 2px 1px #888888;
         }
