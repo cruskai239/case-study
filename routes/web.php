@@ -22,6 +22,9 @@ Route::group(['prefix' => 'impressions'], function(){
     Route::get('do', 'ImpressionController@request_MakeImpression');
 });
 
+Route::get('lp', 'LandingPageController@get_ViewLandingPage');
+
+
 Route::group(['prefix' => 'reporting', 'middleware' => 'auth'], function(){
     Route::get('export-impressions', 'HomeController@get_ExportRecentActivity');
     Route::post('run', 'ReportController@post_GetReportData');
